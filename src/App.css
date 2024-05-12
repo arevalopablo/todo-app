@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+header {
+  grid-column: span 12;
+  height: 90px;
+  border-bottom: 6px solid #fff;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-title {
+  font-size: 50px;
+  padding: 0 30px;
+  color: #fff;
+  text-shadow: 3px 2px #000;
+}
+
+main {
+  margin-top: 40px;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 350px 350px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.div {
+  grid-column: span 6;
+  color: #fff;
+  border: 1px solid #e0dddd;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+label {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input {
+  font-size: 20px;
+  padding: 8px;
+  height: 30px;
+  width: 500px;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.button {
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px auto;
+  cursor: pointer;
+  background: #f85e7c;
+  color: #fff;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #dbd7d7;
+  color: #f5234d;
+  transition: .6s;
+}
+
+.agregar-ctn {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-ctn {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pendientes-ctn {
+  margin: 20px auto 20px auto;
+  min-height: 100px;
+}
+
+.pendientes-tareas-ctn {
+  height: 40px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pendientes-tareas-ctn h3 {
+  font-size: 22px;
+}
+
+.custom-btn {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.realizada-btn {
+  background: #66ff66;
+  
+}
+
+.realizada-btn:hover {
+  background-color: #00e300;
+  transition: .5s;
+}
+
+.eliminar-btn{
+  background: #f74141;
+}
+
+.eliminar-btn:hover {
+  background-color: #fe1919;
+  color: #fff;
+  transition: .5s;
+}
+
+
+
